@@ -1,0 +1,1 @@
+scp -P 5651 -r src db.json package-lock.json package.json petrrezepov@ssh.cloud.nstu.ru:~/reactapp  

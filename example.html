@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PF-Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px;
+            font-size: 20px;
+        }
+        .header img {
+            height: 40px;
+            width: auto;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 500px; /* Changed from 250px to 500px */
+            background: #ecf0f1;
+            padding: 30px; /* Increased padding for better proportions */
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 10px; /* Increased padding */
+            border-radius: 5px;
+            margin-bottom: 20px; /* Added margin for spacing */
+        }
+        .search-box input {
+            border: none;
+            outline: none;
+            width: 100%;
+            font-size: 16px; /* Increased font size */
+        }
+        .profile-card {
+            background: white;
+            padding: 20px; /* Increased padding */
+            margin-top: 20px; /* Increased margin */
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            text-align: left;
+        }
+        .profile-card img {
+            width: 120px; /* Doubled from 60px */
+            height: 120px; /* Doubled from 60px */
+            border-radius: 10px; /* Increased for proportion */
+            object-fit: cover;
+            margin-right: 20px; /* Increased margin */
+        }
+        .profile-info {
+            flex-grow: 1;
+        }
+        .profile-info p {
+            margin: 0;
+            padding: 5px 0; /* Increased padding */
+            font-size: 18px; /* Increased font size */
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+        .panel {
+            margin-bottom: 20px;
+        }
+        .panel button {
+            padding: 10px;
+            border: none;
+            background: #3498db;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>PF-manager</div>
+        <img src="ManagementCompanyLogo.png" alt="ManagmentCompanyLogo">
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <div class="search-box">
+                <input type="text" placeholder="Поиск">
+            </div>
+            <div class="profile-card">
+                <img src="TenatPhoto.jpg" alt="Фото профиля">
+                <div class="profile-info">
+                    <p>Акрапович Лев Андреевич</p>
+                    <p>Пр. Карла Маркса д. 5 кв. 7</p>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="panel">
+                <button>Создать</button>
+                <button>Изменить</button>
+            </div>
+            <p>Выберите дело для просмотра информации</p>
+        </div>
+    </div>
+</body>
+</html>
